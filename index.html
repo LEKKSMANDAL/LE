@@ -9,35 +9,55 @@
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Mandal Logo" class="logo" />
+    <img src="LEKKS mandal Logo.jpg" alt="Mandal Logo" class="logo" />
     <h1>Little Earth Kala Krida v Sanskrutik Mandal</h1>
-    <p>|| वसुधैव कुटुंबकम् ||</p>
+    <h2>|| वसुधैव कुटुंबकम् ||</h2>
   </header>
 
   <section class="events">
     <h2>Our Events</h2>
     <div class="event-list">
-      <div class="event"><h3>Ganapati</h3><img src="assets/ganapati.jpg" alt="Ganapati" /></div>
-      <div class="event"><h3>Navaratri</h3><img src="assets/navaratri.jpg" alt="Navaratri" /></div>
-      <div class="event"><h3>Shiv Jayanti</h3><img src="assets/shivjayanti.jpg" alt="Shiv Jayanti" /></div>
-      <div class="event"><h3>Holi</h3><img src="assets/holi.jpg" alt="Holi" /></div>
+      <div class="event"><h3>Ganapati</h3><img src="Ganapati.jpg" alt="Ganapati" /></div>
+      <div class="event"><h3>Navaratri</h3><img src="Navaratri.jpg" alt="Navaratri" /></div>
+      <div class="event"><h3>Shiv Jayanti</h3><img src="Shivjayanti.jpg" alt="Shiv Jayanti" /></div>
+      <div class="event"><h3>Holi</h3><img src="Holi.jpg" alt="Holi" /></div>
     </div>
   </section>
 
   <section class="gallery">
     <h2>Gallery</h2>
     <p>More photos coming soon in the Gallery branch.</p>
+    <script>
+  const galleryDiv = document.getElementById("galleryPhotos");
+  const totalPhotos = 8; // number of images in the folder
+  for (let i = 1; i <= totalPhotos; i++) {
+    const img = document.createElement("img");
+    img.src = `assets/gallery/g${i}.jpg`;
+    img.alt = `Gallery Photo ${i}`;
+    img.className = "gallery-img";
+    galleryDiv.appendChild(img);
+  }
+    </script>
   </section>
 
   <section class="donation">
     <h2>Donate</h2>
-    <p>Support our cultural work. All donations are non-refundable.</p>
+    <p>Please Support our work. All donations are non-refundable.</p>
     <button onclick="alert('Donation portal coming soon!')">Donate Now</button>
   </section>
 
   <footer>
     <h3>Terms & Conditions</h3>
-    <p>All payments made through this website are non-refundable. Donations are voluntary and used solely for community cultural events.</p>
+    <p>All payments made through this website or in any form are non-refundable. Donations are voluntary and used solely for community events.</p>
+    <section id="terms" style="padding: 20px; background-color: #eee; border-top: 1px solid #ccc;">
+    <p>All payments, including donations, are <strong>non-refundable</strong>.</p>
+    <p>Event participation is subject to availability and on a first-come, first-serve basis.</p>
+    <p>The Mandal reserves the right to change event dates, venues, or schedules due to unforeseen circumstances.</p>
+    <p>Participants are responsible for their personal belongings during events.</p>
+    <p>Any inappropriate behavior during events may lead to removal without refund or warning.</p>
+    <p>By participating, you agree to allow us to use event photos/videos for community promotion.</p>
+  </ul>
+    </section>
   </footer>
 </body>
 </html>
